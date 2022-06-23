@@ -1,6 +1,7 @@
 Тестовое задание для Jupiter Soft
 
-# Запуск Linux Docker
+Linux
+# Запуск через Docker
 
 ```
 sudo docker-compose up -d --build
