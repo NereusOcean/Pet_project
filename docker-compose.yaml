@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    frontend:
+      container_name: frontend
+      build: ./frontend
+      ports:
+        - "3000:3000"
+      restart: unless-stopped
+
+    backend:
+      container_name: backend
+      build: ./backend
+      ports:
+        - "3001:3001"
+      restart: unless-stopped

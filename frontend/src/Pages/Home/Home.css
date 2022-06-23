@@ -1,0 +1,77 @@
+#content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+#filter ul li {
+    font-size: 16px;
+    font-family: epilogue-regular;
+    color: #8B7062;
+    list-style-type: none;
+    margin-right: 66px;
+    transition: all .3s ease;
+
+}
+
+#filter ul {
+    display: inline-flex;
+    margin: 83px 0 60px 0;
+}
+
+#filter ul li:hover {
+    color: rgba(22, 205, 83, 0.4);
+    cursor: default;
+}
+
+#loadMore {
+    color: #8B7062;
+    background-color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-top: 48px;
+    margin-bottom: 185px;
+    transition: all .4s ease;
+
+}
+
+#loadMore:hover{
+    color: #6b564c;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#content #cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    justify-content: center;
+    width: 100%;
+}
+
+#content #cardspc{
+    max-width: 845px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#selectFilter{
+    margin: 47px 22px 31px 22px;
+    max-width: 330px;
+    width: 100%;
+    border-radius: 8px;
+    border-color: #F3D2C1;
+    border: solid 1px;
+    padding: 16px 0 17px 19px;
+    color:#8B7062;
+}
+#selectFilter:hover{
+    color: #6b564c;
+}
+

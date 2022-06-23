@@ -1,0 +1,109 @@
+.Navbar {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 16px;
+}
+.Navbar.pc{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header {
+    border-bottom: solid 1px;
+    border-color: #90E149;
+    overflow: hidden;
+}
+
+.Link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    max-height: 32px;
+    max-width: 494px;
+
+}
+
+.NavLink {
+    margin-right: 64px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+.NavLink.pc{
+    margin-right: 0;
+    margin-top:22px;
+}
+
+#nameComp {
+    font-size: 24px;
+    color: white;
+}
+
+button {
+    font-size: 14px;
+    border: solid 1px;
+    border-color: #626372;
+    border-radius: 8px;
+    padding: 18px 51px 17px 39px;
+    background-color: transparent;
+    color: white;
+
+}
+
+
+.Link.pc{
+    flex-direction: column;
+}
+
+.Button.pc{
+    margin-top: 180px;
+}
+
+#hide{
+    display: none;
+}
+
+.bu{
+    display: flex;
+}
+
+/* ///////////////////////////////////////////// */
+
+.navBar-logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+#imgLogo {
+    margin-right: 15px;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:98px 0 61px 0 ;
+}
+
+#nameWork {
+    font-size: 72px;
+    color: white;
+    font-family: epilogue-medium;
+}
+
+#description{
+    font-size: 16px;
+    color:#A8A9B1;
+    margin-top:30px;
+    max-width: 562px;
+    text-align: center;
+    line-height: 2;
+}
+
+button{
+    font-family: epilogue-black;
+    font-size: 14px;
+}

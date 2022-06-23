@@ -1,0 +1,68 @@
+.card {
+    position: relative;
+    border-radius: 8px;
+    border: solid 3px;
+    border-color: transparent;
+    margin: 0 23px 31px 23px;
+    overflow: hidden;
+    max-height: 417px;
+    max-width: 371px;
+    width: auto;
+}
+
+
+.categoryAndName {
+    position: absolute;
+    bottom: 52px;
+    left: 52px;
+
+}
+
+.category {
+    display: inline-flex;
+    align-items: center;
+    cursor:pointer;
+    background-color: white;
+    border-radius: 22px;
+    margin-bottom: 26px;
+    max-height: 39px;
+    height: 39px;
+    width: auto;
+}
+
+#cardCategoryText {
+    font-size: 16px;
+    color: #391400;
+
+    margin-left: 16px;
+    margin-right: 20px;
+}
+
+.categoryAndName .name {
+    display: grid;
+    font-size: 40px;
+    font-family: epilogue-medium;
+    color: white;
+    max-height: 48px;
+    width: auto;
+}
+
+
+#box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(57, 20, 0, 0.3);
+    transition: all .3s ease;
+}
+
+#box:hover::before {
+    background-color: inherit;
+}
+
+.selectCard{
+    border-color: #68D967;
+}
