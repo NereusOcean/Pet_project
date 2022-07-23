@@ -11,13 +11,7 @@ import { useSelector } from 'react-redux';
 function Home() {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
-  const [pcVersion, setPcVersion] = useState();
-  const size = useSelector(state => state.sizeReducer.size);
-
-  if (size > 1040 && pcVersion != false) setPcVersion(false);
-  else if (size < 1040 && pcVersion != true) setPcVersion(true);
-
-
+  
   useEffect(() => {
     setQueryFilter();
   }, [data]);
@@ -80,7 +74,6 @@ function Home() {
 
   return (
     <div id='content'>
-      {!pcVersion &&
         <div id="filter">
           <ul>
             <li onClick={() => setFilter(enumFilter.ShowAll)} key={enumFilter.ShowAll}>Show All</li>
@@ -90,8 +83,7 @@ function Home() {
             <li onClick={() => setFilter(enumFilter.Motion)} key={enumFilter.Motion}>Motion</li>
           </ul>
         </div>
-      }
-      {pcVersion &&
+
         <select id='selectFilter' onChange={(e) => setFilter(e.target.value)}>
           <option value={enumFilter.ShowAll}>Show All</option>
           <option value={enumFilter.Branding}>Branding</option>
@@ -99,10 +91,10 @@ function Home() {
           <option value={enumFilter.Design}>Design</option>
           <option value={enumFilter.Motion}>Motion</option>
         </select>
-      }
+      
 
 
-      <div id="cards" style={pcVersion ? { maxWidth: "845px" } : {}}>
+      <div id="cards">
         <Strips data={filteredData} filterFunc={setFilter}/>
       </div>
       <button id="loadMore" onClick={() => loadMore()}>Load More</button>

@@ -1,6 +1,3 @@
-import React from 'react'
-
-
 
 function generateCards(data, constData) {
     let res = JSON.parse(JSON.stringify(data));

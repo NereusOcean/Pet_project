@@ -7,33 +7,6 @@ function PictureStrips(props) {
   const [selectState, setSelectState] = useState(false);
 
 
-  // const putInBasket = () => {
-  //   let arr = (JSON.parse(localStorage.getItem('wantBuy')) || []);
-
-  //   arr.push(Number(strip.id));
-
-  //   localStorage.setItem("wantBuy", JSON.stringify(arr));
-  //   setButtonState("in basket");
-  // }
-
-  // const getFromBasket = () => {
-  //   let arr = (JSON.parse(localStorage.getItem('wantBuy')) || []);
-
-  //   let newarr = arr.filter((elem) => elem !== Number(strip.id));
-
-  //   localStorage.setItem("wantBuy", JSON.stringify(newarr));
-  //   setButtonState("");
-  // };
-
-  // useEffect(() =>{
-
-  //   let arr = (JSON.parse(localStorage.getItem('wantBuy')) || []);
-  //   let searchIndex = arr.indexOf(Number(strip.id));
-  //   if(searchIndex !== -1) setButtonState("in basket");
-
-
-  // },[])
-
   let strip = props.data;
   //
   const selectCard = () => {
