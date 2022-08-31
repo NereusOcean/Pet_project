@@ -1,4 +1,6 @@
-Тестовое задание для Jupiter Soft
+
+
+
 
 Linux
 # Запуск через Docker
